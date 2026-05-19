@@ -4,8 +4,6 @@ metadata:
   name: {{ include "python-app.fullname" . }}
   labels:
     {{- include "python-app.labels" . | nindent 4 }}
-  annotations:
-    /sync-wave: "-2"
 spec:
   type: {{ .Values.service.type }}
   ports:
