@@ -40,5 +40,8 @@ spec:
                   number: {{ $.Values.service.port }}
           {{- end }}
     {{- end }}
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
 {{- end }}
 
